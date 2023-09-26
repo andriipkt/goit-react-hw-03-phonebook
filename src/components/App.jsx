@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
+
 import Header from './Header/Header';
 import Phonebook from './Phonebook/Phonebook';
 import Filter from './Filter/Filter';

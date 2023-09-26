@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import css from './Phonebook.module.css';
+import PropTypes from 'prop-types';
 
 class Phonebook extends Component {
   state = {
@@ -66,3 +67,7 @@ class Phonebook extends Component {
 }
 
 export default Phonebook;
+
+Phonebook.propTypes = {
+  addContact: PropTypes.func.isRequired,
+};

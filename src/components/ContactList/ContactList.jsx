@@ -1,4 +1,5 @@
 import css from './ContactList.module.css';
+import PropTypes from 'prop-types';
 
 const ContactList = ({ filteredContacts, deleteContact }) => (
   <ul className={`list-group list-group-flush ${css.contactList}`}>
@@ -17,3 +18,8 @@ const ContactList = ({ filteredContacts, deleteContact }) => (
 );
 
 export default ContactList;
+
+ContactList.propTypes = {
+  filteredContacts: PropTypes.array.isRequired,
+  deleteContact: PropTypes.func.isRequired,
+};
